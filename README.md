@@ -6,18 +6,18 @@ Nginx reverse proxy running in Docker Compose, sitting in front of three backend
 
 ```
                       ┌─────────────────────┐
-                      │    YOUR BROWSER      │
+                      │    YOUR BROWSER     │
                       └─────────┬───────────┘
                                 │
                       ┌─────────▼───────────┐
-                      │   NGINX PROXY        │
-                      │   :80  → :443        │
+                      │     NGINX PROXY     │
+                      │     :80 → :443      │
                       └──┬──────┬──────┬────┘
                          │      │      │
-             ┌───────────▼─┐ ┌──▼───┐ ┌▼──────┐
-             │   App 1     │ │App 2 │ │ App 3 │
-             │  (x2 inst.) │ │ (x2) │ │  (x2) │
-             └─────────────┘ └──────┘ └───────┘
+             ┌───────────▼┐ ┌───▼───┐ ┌▼──────┐
+             │   App 1    │ │ App 2 │ │ App 3 │
+             │ (x2 inst.) │ │ (x2)  │ │ (x2)  │
+             └────────────┘ └───────┘ └───────┘
 ```
 
 ## Features
